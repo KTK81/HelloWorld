@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html>
+<!--
+nefunckny script
+1. nenapojeny script.js subor :)
+2. chybny addEventListener; namiesto "click" som mal "onclick" ; vzdy BEZ "on" na zaciatku = click, mouseover, mousedown, resize
+3. caseSensitive - mal som velke pismeno na zaciatku, malo byt male, document.getElementByID, mal som Document....
+
+-->
 
 <head>
 	<title>Hello World</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 
 <body>
 	
+
+    
+    
     
 	<h1 id="result">Hell World</h1>
 
 
-    
+    <div>
+        zaciatok;
+<!--    <canvas id="canvasFirst" width="600px" height="400px" onclick="color='black'"></canvas>-->
+<!--        <canvas id="canvasFirst" width="600px" height="400px"></canvas>-->
+        <canvas id="canvasFirst" ></canvas>
 
-    
-    
+        koniec;
+    </div>
+    <div>
+        <center><button id="btnColorBlue">Zmen farbu</button>
+        <button id="btnColorGreen">Zmen obrazok</button>
+        <button id="btnColorYellow">Zlta farba</button></center>
+    </div>
+    <div>
+        <img id="imageTest" src="4farby.jpg">
+    </div>
 	
-    
+    <script src="script.js"></script>
 </body>
 </html>
