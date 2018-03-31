@@ -22,16 +22,19 @@ function drawFromExistingImage() {
 }
 
 function drawFromFile () {
-//    var image = new Image ();
-//    image.src = "4farby.jpg";
-    var image = document.getElementById("imageTest");
+    var imageBeta = new Image ();
+    imageBeta.src = "rea-office-20-20-wenge.jpg";
     
-    ctxBeta.drawImage(image, 0, 0, canvasBeta.width, canvasBeta.height);
+    ctxBeta.drawImage(imageBeta, 0, 0, canvasBeta.width, canvasBeta.height);
     
 }
 
+// ***********  FUNGUJEEEE ************
+//
+//
 
-    
+
+//  *** BUTTON ***
 //    btnBlue.style.backgroundColor = "red";
 //    btnBlue.style.color="red";    //text
 //    btnBlue.innerHTML = "FunGUJEE";
