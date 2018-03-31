@@ -5,6 +5,7 @@ nefunckny script
 1. nenapojeny script.js subor :)
 2. chybny addEventListener; namiesto "click" som mal "onclick" ; vzdy BEZ "on" na zaciatku = click, mouseover, mousedown, resize
 3. caseSensitive - mal som velke pismeno na zaciatku, malo byt male, document.getElementByID, mal som Document....
+4. funckia v addEvenTListener je BEZ zatvoriek, len nazov funkcie. Teda, aspon teraz v newbie svete, kym nema parametre
 
 -->
 
@@ -25,18 +26,26 @@ nefunckny script
 
 
     <div>
-        zaciatok;
-<!--    <canvas id="canvasFirst" width="600px" height="400px" onclick="color='black'"></canvas>-->
-<!--        <canvas id="canvasFirst" width="600px" height="400px"></canvas>-->
         <canvas id="canvasFirst" ></canvas>
-
-        koniec;
+<!--
+    </div>
+    <div>
+-->
+        <center><canvas id="canvasSecond"></canvas></center>
     </div>
     <div>
         <center><button id="btnColorBlue">Zmen farbu</button>
-        <button id="btnColorGreen">Zmen obrazok</button>
-        <button id="btnColorYellow">Zlta farba</button></center>
+        <button id="btnColorGreen">Pridaj uz existujuci obrazok</button>
+        <button id="btnColorYellow">Pridaj obrazok zo suboru</button></center>
     </div>
+    <div>
+        <canvas class="canvasSmall" id="canvas3">dd</canvas>
+        <canvas class="canvasSmall" id="canvas4"></canvas>
+        <canvas class="canvasSmall" id="canvas5"></canvas>
+        <canvas class="canvasSmall" id="canvas6"></canvas>
+    </div>
+    
+    
     <div>
         <img id="imageTest" src="4farby.jpg">
     </div>

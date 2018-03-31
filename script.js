@@ -1,26 +1,34 @@
 
 var canvasMain = document.getElementById("canvasFirst");
+var ctx = canvasMain.getContext("2d");
+var canvasBeta = document.getElementById("canvasSecond");
+var ctxBeta = canvasBeta.getContext("2d");
+
 var btnBlue = document.getElementById("btnColorBlue");
 var btnGreen = document.getElementById("btnColorGreen");
+var btnYellow = document.getElementById("btnColorYellow");
 btnBlue.addEventListener("click", changeColor);
-btnGreen.addEventListener("click", changeIMG);
+btnGreen.addEventListener("click", drawFromExistingImage);
+btnYellow.addEventListener("click", drawFromFile);
+
 
 function changeColor() {
-    canvasMain.style.backgroundColor = "red";
+    canvasMain.style.backgroundColor = "green";
 }
 
+function drawFromExistingImage() {
+    var image = document.getElementById("imageTest");
+    ctx.drawImage(image, canvasMain.width/2-25, canvasMain.height/2-25, 50, 50);
+}
 
-function changeIMG() {
-//    document.getElementById("imageTest").src="vsetkyfarby.jpg";
-    
-    var ctx = canvasMain.getContext("2d");
+function drawFromFile () {
+//    var image = new Image ();
+//    image.src = "4farby.jpg";
     var image = document.getElementById("imageTest");
     
-    ctx.drawImage(image, canvasMain.width/2-25, canvasMain.height/2-25, 50, 50);
-    ctx.drawImage(image, canvasMain.width/2-50, canvasMain.height/2-50, 100, 100);
+    ctxBeta.drawImage(image, 0, 0, canvasBeta.width, canvasBeta.height);
     
 }
-    
 
 
     

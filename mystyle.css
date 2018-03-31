@@ -3,18 +3,41 @@
     padding: 0;
 }
 
+
 html {
     background-color: azure;
 }
 
 
-canvas {
+#canvasFirst {
     border: 1px solid dodgerblue;
     background-color: lightyellow;
     text-align: center;
     width: 50%;
     height: auto;
+    display: block;
 }
+
+#canvasSecond {
+    width: 40%;
+    height: auto;
+    background-color:darkgoldenrod;
+    display: block;
+/*    border: 1px solid black;*/
+}
+
+canvas.canvasSmall {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    display: block;
+}
+
+#canvas3 {
+    background-color: bisque;
+}
+
+
 
 img {
     width: 300px;
